@@ -11,7 +11,6 @@
         -favicon
     --->
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg.xml" />
-
     <!---
         -css link
     --->
@@ -27,8 +26,7 @@
     <!--
         preload banner
     -->
-    <link rel="preload" href="./assets/images/hero-banner.jpg" as="image">
-
+    <link rel="preload" href="./assets/images/hero-banner.jpg" as="image" />
 </head>
 
 <body>
@@ -39,17 +37,18 @@
                 <img src="./assets/images/logo.png" width="160" height="50" alt="BBB Logo" />
             </a>
 
-            <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
-                <ion-icon name="menu-outline"></ion-icon>
-            </button>
+            <button class="nav-open-btn" data-nav-open-btn aria-label="Open
+                    Menu">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
 
             <nav class="navbar" data-navbar>
                 <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
-                    <ion-icon name="close-outline"></ion-icon>
-                </button>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
 
                 <a href="#" class="logo">
-                    <img src="./assets/images/logo.png" width="190" height="50" alt="BBB Logo">
+                    <img src="./assets/images/logo.png" width="190" height="50" alt="BBB Logo" />
                 </a>
 
                 <ul class="navbar-list">
@@ -78,41 +77,45 @@
                     </li>
                 </ul>
 
-
                 <ul class="nav-action-list">
                     <li>
                         <button class="nav-action-btn">
-                            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                                <ion-icon name="search-outline"
+                                    aria-hidden="true"></ion-icon>
 
-                            <span class="nav-action-text">Search</span>
-                        </button>
+                                <span class="nav-action-text">Search</span>
+                            </button>
                     </li>
 
                     <li>
                         <button class="nav-action-btn">
-                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                                <ion-icon name="person-outline"
+                                    aria-hidden="true"></ion-icon>
 
-                            <span class="nav-action-text">Login / Register</span>
-                        </button>
+                                <span class="nav-action-text">Login / Register</span>
+                            </button>
                     </li>
 
                     <li>
                         <button class="nav-action-btn">
-                            <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+                                <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+                                <data class="nav-action-text" value="318.00">Basket:
+                                    <strong>$318.00</strong></data>
 
-                            <data class="nav-action-text" value="318.00">Basket: <strong>$318.00</strong></data>
-
-                            <data class="nav-action-badge" value="4" aria-hidden="true">4</data>
-                        </button>
+                                <data class="nav-action-badge" value="4"
+                                    aria-hidden="true">4</data>
+                            </button>
                     </li>
 
                     <li>
                         <button class="nav-action-btn">
-                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                <ion-icon name="heart-outline"
+                                    aria-hidden="true"></ion-icon>
 
-                            <span class="nav-action-text">Wishlist</span>
-                            <data class="nav-action-badge" value="5" aria-hidden="true">5</data>
-                        </button>
+                                <span class="nav-action-text">Wishlist</span>
+                                <data class="nav-action-badge" value="5"
+                                    aria-hidden="true">5</data>
+                            </button>
                     </li>
                 </ul>
             </nav>
@@ -124,7 +127,8 @@
             <!--
                 #HERO
             -->
-            <section class="section hero" style="background-image: url('./assets/images/hero-banner.jpg')">
+            <section class="section hero" style="background-image:
+                    url('./assets/images/hero-banner.jpg')">
                 <div class="container">
                     <h2 class="h1 hero-title">
                         New Summer <strong>Shoes Collection</strong>
@@ -132,10 +136,57 @@
                     <p class="hero-text">La la la la la la la</p>
 
                     <button class="btn btn-primary">
-                        <span>Shop Now</span>
+                            <span>Shop Now</span>
 
-                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                    </button>
+                            <ion-icon name="arrow-forward-outline"
+                                aria-hidden="true"></ion-icon>
+                        </button>
+                </div>
+            </section>
+
+            <!--
+                COLLECTION
+            -->
+            <section class="section collection">
+                <div class="container">
+                    <ul class="collection-list has-scrollbar">
+                        <li>
+                            <div class="collection-card" style="
+                                    background-image:
+                                    url('./assets/images/collection-1.png');
+                                    ">
+                                <h3 class="h4 card-title">Protein</h3>
+                                <a href="£" class="btn btn-secondary">
+                                    <span>Explore All</span>
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+
+                            <div class="collection-card" style="
+                                    background-image:
+                                    url('./assets/images/collection-2.png');
+                                    ">
+                                <h3 class="h4 card-title">Vitamins</h3>
+                                <a href="£" class="btn btn-secondary">
+                                    <span>Explore All</span>
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+
+                            <div class="collection-card" style="
+                                    background-image:
+                                    url('./assets/images/collection-3.png');
+                                    ">
+                                <h3 class="h4 card-title">Bars & Snacks</h3>
+                                <a href="£" class="btn btn-secondary">
+                                    <span>Explore All</span>
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+
+
+                        </li>
+                    </ul>
                 </div>
             </section>
         </article>

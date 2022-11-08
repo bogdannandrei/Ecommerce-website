@@ -165,7 +165,22 @@ body {
     align-items: center;
     gap: 5px;
     padding: 14px 25px;
-    border: 1px solid var(--border-color, rgba(0, 128, 0, 0.6))
+    border: 1px solid var(--border-color, rgba(0, 128, 0, 0.5));
+}
+
+.btn-primary:is(:hover, :focus) {
+    --background: rgba(0, 128, 0, 0.7);
+    --border-color: rgba(0, 128, 0, 0.7);
+}
+
+.btn-secondary {
+    --background: transparent;
+    --border-color: var(--black);
+    --color: var(--black);
+}
+
+.btn-secondary:is(:hover, :focus) {
+    --background: hsla(0, 0%, 0%, 0.1);
 }
 
 
@@ -200,7 +215,7 @@ body {
 }
 
 .nav-open-btn:is(:hover, :focus) {
-    background: rgba(0, 128, 0, 0.5);
+    background: rgba(0, 128, 0, 0.7);
 }
 
 .nav-open-btn ion-icon {
@@ -364,4 +379,19 @@ body {
     line-height: 1.8;
     max-width: 46ch;
     margin-bottom: 25px;
+}
+
+
+/* COLLECTION */
+
+.collection-card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 45px 25px;
 }
